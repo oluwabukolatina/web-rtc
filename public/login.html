@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Login to make your calls</title>
+    </head>
+    <body>
+        <form id="formid" method="post">
+          <div class="">
+            <h1>Password</h1>
+              <input type="password" id="password" name="password"/>
+          </div>
+
+          <div class="">
+            <input type="submit" value="Login" />
+          </div>
+            </form>
+
+        <script>
+        var password = document.getElementById("password").value;
+        if(password == "password"){
+          console.log("login successfully");
+        }
+            // $(document).ready(function () {
+            //     $("form").submit(function () {
+            //         console.log("password sumbitted");
+                //     var pw = { "pw": $("input").val() };
+                //     $.post("/login", pw, function (response, status) {
+                //         console.log("PW:" + JSON.stringify(pw.pw) + "\nstatus:" + status);
+                //         if (response == "logged in") {
+                //             location.reload();
+                //         }
+                //         else {
+                //             $("body").text(response);
+                //         }
+                //         console.log(JSON.stringify(response));
+                //     }
+                // );
+            //     });
+            // });
+    </script>
+    </body>
+</html>
