@@ -143,6 +143,6 @@ easyrtc.setOption("logLevel", "debug");
 //start easy rtc serverapp.use(express.bodyParser());
 
 // Listen on port 8080
-webServer.listen(8080, function () {
-    console.log('listening on http://localhost:8080');
+webServer.listen(process.env.PORT || 8080, function(){
+    console.log('Your node js server is running');
 });
